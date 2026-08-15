@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useState, useEffect } from "react";
-import { useParams, useSearchParams } from "next/navigation";
+import { useParams } from "next/navigation";
 import { type LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
 import { LEAD_TRACK_CONFIG } from "@/lib/config/lead-track-config";
 import {
@@ -23,7 +23,6 @@ import { Headline } from "./headline";
 
 export default function Formv1() {
   const params = useParams();
-  const searchParams = useSearchParams();
   const [titleRedLine, setTitleRedLine] = useState<React.ReactNode | null>(
     null
   );
@@ -32,9 +31,6 @@ export default function Formv1() {
     undefined
   );
   const [submitError, setSubmitError] = useState<string | null>(null);
-  const [formFields, setFormFields] = useState<Record<string, string> | null>(
-    null
-  );
 
   const rawSlug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
   const region =
@@ -114,7 +110,7 @@ export default function Formv1() {
         throw new Error("requestId nao retornado na resposta.");
       }
 
-      window.location.href = `/quiz-oro/?temperature=${temperatura}&requestId=${encodeURIComponent(
+      window.location.href = `/quiz-tdo/?temperature=${temperatura}&requestId=${encodeURIComponent(
         requestId
       )}&email=${encodeURIComponent(data.email)}&phone=${encodeURIComponent(data.normalizedPhone)}${region ? `&region=${encodeURIComponent(region)}` : ""}`;
     } catch (error) {

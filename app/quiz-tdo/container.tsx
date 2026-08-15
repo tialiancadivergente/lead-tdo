@@ -70,17 +70,17 @@ export default function ContainerQuest({
   return (
     <div>
       <section
-        className={`relative flex items-center justify-center overflow-hidden h-full dark:bg-[url('/images/v21/bg_leadscore.webp')] light:bg-[url('/images/oro/splashScreen.webp')] bg-cover bg-center`}
+        className={`relative flex items-center justify-center overflow-hidden h-full dark:bg-[url('/images/oro/v5.1/bg.webp')] light:bg-[url('/images/oro/v5.1/bg.webp')] bg-cover bg-center`}
       >
         <div className="container mx-auto relative h-full px-4">
           <div className="flex flex-col items-center justify-center text-center py-8">
             <div className="w-full max-w-4xl mx-auto">
               <div className="mb-6 md:mb-8 flex justify-center">
                 <Image
-                  src={theme === "1" ? "/images/v21/logo_o_resgate_dos_otimistas.webp" : "/images/logo-o-resgate-dos-otimistas.png"}
+                  src="/images/triunfo-dos-otimistas.png"
                   alt="Logotipo Resgate dos otimistas"
-                  width={424}
-                  height={164}
+                  width={274}
+                  height={84}
                   priority
                   className="object-contain select-none pointer-events-none h-auto"
                   style={{
@@ -144,7 +144,7 @@ export default function ContainerQuest({
                       <div className="mb-4">
                         <div className="w-full bg-white/20 rounded-full h-2">
                           <div
-                            className="bg-teal-500 h-2 rounded-full transition-all duration-300"
+                            className="bg-custom-primary-gold h-2 rounded-full transition-all duration-300"
                             style={{ width: `${progress}%` }}
                           />
                         </div>
@@ -220,7 +220,7 @@ export default function ContainerQuest({
                         <Button
                           onClick={handleNext}
                           disabled={!isCurrentQuestionAnswered || isSubmittingAnswers}
-                          className={`bg-teal-600 hover:bg-teal-700 text-white py-3 md:py-5 text-sm md:text-base ${currentQuestion === 0 ? "col-span-2" : ""
+                          className={`bg-custom-primary-gold hover:bg-custom-primary-gold/80 text-white py-3 md:py-5 text-sm md:text-base ${currentQuestion === 0 ? "col-span-2" : ""
                             }`}
                           style={{ fontFamily: '"Roboto", Sans-serif' }}
                         >
