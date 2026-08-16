@@ -9,7 +9,7 @@ export default function Footer() {
 
 					<div className="font-normal font-raleway text-[14px] text-white text-center lg:text-left order-2 lg:order-1">
 						<p>
-							Copyright © O Triunfo Dos Otimistas.
+							Copyright © O Resgate dos Otimistas.
 						</p>
 
 						<p>
@@ -52,9 +52,30 @@ export default function Footer() {
 							</a>
 						</div>
 
+						<div className="mt-1 text-[14px]">
+							<p>
+								ALIANCA DIVERGENTE LTDA
+							</p>
+
+							<p>
+								CNPJ: 59.301.463.0001-36
+							</p>
+						</div>
+
 					</div>
 
 				</div>
+
+				<div className="text-white font-raleway text-[14px] max-w-[1080px] mx-auto w-full text-center">
+					<h3 className="font-bold uppercase mb-4">
+						AVISO LEGAL:
+					</h3>
+
+					<p className="leading-relaxed max-w-[1000px] mx-auto">
+						Os resultados podem variar de pessoa para pessoa. Este método tem caráter educacional e de desenvolvimento pessoal, não garantindo ganhos financeiros imediatos ou específicos. O sucesso depende da aplicação prática de cada participante. Este site não é afiliado, endossado ou patrocinado pelo Google ou Meta.
+					</p>
+				</div>
+
 			</footer>
 		</div>
 	)
