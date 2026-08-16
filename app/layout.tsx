@@ -43,7 +43,7 @@ const mulish = Mulish({
 })
 
 export const metadata: Metadata = {
-  title: "O Resgate dos Otimistas - Diagnóstico de Dependência Emocional",
+  title: "Triunfo Dos Otimistas",
   description:
     "Faça seu diagnóstico de dependência emocional gratuito e descubra como aumentar seu nível de permissão.",
   icons: {
