@@ -1,9 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
-import Script from "next/script"
 import './globals.css'
 import { Spectral, Bebas_Neue, Roboto, Raleway, Mulish } from 'next/font/google'
-import "./globals.css"
 import GoogleTagManager from "./components/GoogleTagManager"
 import MicrosoftClarity from "./components/MicrosoftClarity"
 import AliancaTrackingScript from "./components/AliancaTrackingScript"
@@ -76,9 +74,6 @@ export default function RootLayout({
         <MicrosoftClarity />
         <AliancaTrackingScript />
         <Providers>{children}</Providers>
-        <Script id="buzzlead-tracker" strategy="afterInteractive">
-          {`!function(e,a,t,i){function n(){setTimeout((function(){e.bindFields(e.blId,e.trackFields)}),1500)}if(e.blDataLayer=e.blDataLayer||{nome:void 0,email:void 0,documento:void 0, phone: void 0},e.blId="BL-68751d590cc8dca2c54723f9-L1Z1",e.trackFields=[{nome:"form-field-name"},{email:"form-field-email"},{phone:"form-field-telefone"}],e.Tracker)n();else{var o=a.getElementsByTagName("script")[0],r=a.createElement("script");r.async=!0,r.src="https://static.buzzlead.com.br/tracker.js",r.onload=n,o.parentNode.insertBefore(r,o)}}(window,document);`}
-        </Script>
       </body>
     </html>
   )

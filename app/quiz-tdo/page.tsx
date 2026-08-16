@@ -27,7 +27,6 @@ import { useSearchParams } from "next/navigation";
 
 function QuizNewPageContent() {
   const searchParams = useSearchParams();
-  const region = (searchParams.get("region") || "").toLowerCase();
   const [answers, setAnswers] = useState<Record<string, AnswerValue>>({});
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [submitError, setSubmitError] = useState<string | null>(null);
@@ -99,8 +98,8 @@ function QuizNewPageContent() {
   }, [questionsDataUpdatedAt]);
 
   const whatsappUrl = useMemo(() => {
-    return resolveQuestTesteWhatsappUrl(temperature, region);
-  }, [temperature, region]);
+    return resolveQuestTesteWhatsappUrl(temperature);
+  }, [temperature]);
 
   const fetchQuestions = useCallback(async () => {
     await refetchQuestions();

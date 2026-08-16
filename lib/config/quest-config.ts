@@ -1,12 +1,12 @@
 export const DEFAULT_QUEST_FORM_VERSION_ID =
-  "c0909c2f-4bb6-49fe-8fac-7153076f6781";
+  "48545364-bb8c-4926-93e1-f1cd6790f225";
 
 const QUEST_WHATSAPP_URL_BY_TEMPERATURE = {
-  f: "https://sendflow.click/i/oro-jul26-traf-2",
-  org: "https://sendflow.click/i/oro-jul26-org",
-  m: "https://sendflow.click/i/oro-jul26-traf-2",
-  q: "https://sendflow.click/i/oro-jul26-traf-2",
-  t: "https://sendflow.click/i/oro-jul26-traf-2",
+  f: "https://sendflow.click/i/tdoago26",
+  org: "https://sendflow.click/i/tdoago26org",
+  m: "https://sendflow.click/i/tdoago26",
+  q: "https://sendflow.click/i/tdoago26",
+  t: "https://sendflow.click/i/tdoago26",
 } as const;
 
 const QUEST_WHATSAPP_URL_BY_REGION = {
@@ -39,7 +39,7 @@ export function resolveQuestTesteWhatsappUrl(
     normalizedTemperature as QuestTesteTemperatureKey
   )
     ? (normalizedTemperature as QuestTesteTemperatureKey)
-    : "f";
+    : "org";
 
   return QUEST_WHATSAPP_URL_BY_TEMPERATURE[resolvedKey];
 }
