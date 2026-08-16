@@ -10,7 +10,7 @@ interface IHeadline {
 
 const description = (
   <p className="font-spectral text-[20px] leading-[135%] text-[#D3CAC0]">
-    Descubra o padrão que TRAVA O SEU DINHEIRO sempre no mesmo teto — e que reaparece toda vez que a sua vida está prestes a dar certo.
+    Descubra o padrão que LIMITA OS SEUS GANHOS — e que reaparece quando a sua vida está prestes a dar certo.
   </p>
 );
 
@@ -21,16 +21,12 @@ export const Headline: IHeadline[] = [
     isLogo: true,
     title: (
       <p className="uppercase font-spectral font-extrabold text-[#D3CAC0] leading-[1.05]">
-        Faça seu diagnóstico
+        Faça sua análise
         <br />
         <span className="text-[#C0964B]">
-          de bloqueio
+          de teto financeiro
         </span>
-        <br />
-        <span className="text-[#C0964B]">
-          de permissão
-        </span>{" "}
-        gratuito
+        gratuita
       </p>
     ),
     text: description,
