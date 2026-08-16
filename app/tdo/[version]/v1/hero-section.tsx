@@ -20,7 +20,7 @@ const marqueeItems = Array.from({ length: 8 });
 export default function HeroSection({ titleRedLine, redLine, formName, onSubmit, submitError }: ContainerProps) {
   const params = useParams();
   const event = getEventConfigFromSlug(params.slug);
-  const eventDate = event.region === "Brasil" ? "20, 21 e 22/07" : "24, 25 E 26/08";
+  const eventDate = event.region === "Brasil" ? "24, 25 e 26/08" : "24, 25 e 26/08";
 
   return (
     <section
