@@ -9,7 +9,7 @@ interface IHeadline {
 }
 
 const description = (
-  <p className="font-spectral text-[20px] leading-[135%] text-[#D3CAC0]">
+  <p className="font-spectral text-[16px] md:text-[20px] leading-[135%] text-[#D3CAC0]">
     Descubra o padrão que LIMITA OS SEUS GANHOS — e que reaparece quando a sua vida está prestes a dar certo.
   </p>
 );
@@ -25,7 +25,7 @@ export const Headline: IHeadline[] = [
         <br />
         <span className="text-[#C0964B]">
           de teto financeiro
-        </span>
+        </span>{" "}
         gratuita
       </p>
     ),

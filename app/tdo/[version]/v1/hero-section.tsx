@@ -63,20 +63,11 @@ export default function HeroSection({ titleRedLine, redLine, formName, onSubmit,
             </div>
           </div>
 
-          <div className="mt-4 h-[87px] w-full font-spectral text-[24px] font-extrabold uppercase leading-[120%] text-[#F4F0E1] md:hidden">
-            Faça seu diagnóstico de dependência <span className="text-[#C0964B]">emocional</span> gratuito
+          <div className="mt-6 text-left">
+            <div className="font-spectral text-[24px] md:text-[36px] font-extrabold leading-none text-[#F4F0E1]">{titleRedLine}</div>
           </div>
 
-          <div className="mt-6 hidden text-left md:block">
-            <div className="font-spectral text-[36px] font-extrabold leading-none text-[#F4F0E1]">{titleRedLine}</div>
-          </div>
-
-          <div className="mb-5 mt-3 h-[66px] w-full font-spectral text-[16px] font-normal leading-[135%] text-[#D3CAC0] md:hidden">
-            Descubra quais padrões invisíveis travam o seu financeiro e aprenda como superá-los na{" "}
-            <span className="font-bold text-[#C0964B]">Última Edição do Resgate dos Otimistas.</span>
-          </div>
-
-          <div className="mb-8 mt-4 hidden max-w-[460px] font-spectral text-[20px] leading-[135%] text-[#D3CAC0] md:block">
+          <div className="mb-8 mt-4 max-w-[460px] font-spectral text-[16px] md:text-[20px] leading-[135%] text-[#D3CAC0]">
             {redLine || (
               <>
                 Descubra como <span className="font-bold text-[#C0964B]">aumentar o seu nível de permissão</span> e melhorar seus resultados nas finanças, nos relacionamentos e na saúde.
