@@ -10,7 +10,7 @@ interface IHeadline {
 
 const description = (
   <p className="font-spectral text-[20px] leading-[135%] text-[#D3CAC0]">
-    Descubra como AUMENTAR O SEU NÍVEL DE PERMISSÃO e melhorar seus resultados nas finanças, nos relacionamentos e na saúde.
+    Descubra o padrão que TRAVA O SEU DINHEIRO sempre no mesmo teto — e que reaparece toda vez que a sua vida está prestes a dar certo.
   </p>
 );
 
@@ -24,11 +24,11 @@ export const Headline: IHeadline[] = [
         Faça seu diagnóstico
         <br />
         <span className="text-[#C0964B]">
-          de dependência
+          de bloqueio
         </span>
         <br />
         <span className="text-[#C0964B]">
-          emocional
+          de permissão
         </span>{" "}
         gratuito
       </p>
