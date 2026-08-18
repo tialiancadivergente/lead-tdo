@@ -100,8 +100,8 @@ export default function ThirdSection() {
 
             <div className="relative mx-auto mt-[32px] h-[188px] w-[300px] overflow-hidden rounded-[16px] md:w-[299px]">
               <Image
-                src="/images/tdo/v2/image 100.png"
-                alt="Diagnóstico de Dependência Emocional"
+                src="/images/tdo/v2/image.png"
+                alt="Segunda aula do Triunfo dos Otimistas"
                 fill
                 sizes="(max-width: 767px) 300px, 299px"
                 className="object-cover"
@@ -110,11 +110,11 @@ export default function ThirdSection() {
 
             <h3 className="mt-[32px] w-full font-spectral text-[20px] font-bold leading-[135%] text-white">
               <span className="md:hidden">
-                Análise de Padrões Emocionais e Os Perfis Controladores
+                Análise de Padrões e Os Perfis Controladores
               </span>
 
               <span className="hidden md:block">
-                Análise de Padrões Emocionais
+                Análise de Padrões
                 <br />
                 e Os Perfis Controladores
               </span>
@@ -122,7 +122,7 @@ export default function ThirdSection() {
 
             <div className="mt-[24px] w-full font-spectral text-[16px] font-medium leading-[140%] text-[#B1B1B1]">
               <p>
-                A aula em que você finalmente fará a sua Avaliação de Padrões Emocionais e entenderá que relações, bloqueios e padrões estão travando a sua Permissão e impedindo os seus resultados.
+                A aula em que você finalmente fará a sua Avaliação de Padrões e entenderá que relações, bloqueios e padrões estão travando a sua Permissão e impedindo os seus resultados.
               </p>
 
               <p className="mt-[16px] md:mt-[24px]">

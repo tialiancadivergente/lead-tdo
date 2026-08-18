@@ -20,9 +20,12 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral font-extrabold uppercase leading-[1.05] text-[#D3CAC0]">
-        Faça sua análise de{" "}
-        <span className="text-[#C0964B]">padrões emocionais</span> gratuita
+      <p className="font-spectral text-[21px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
+        Faça sua análise de
+        <br />
+        <span className="text-[#C0964B]">padrões invisíveis</span>
+        <br />
+        gratuita
       </p>
     ),
     text: description,
@@ -32,9 +35,12 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral font-extrabold uppercase leading-[1.05] text-[#D3CAC0]">
-        Faça sua análise de{" "}
-        <span className="text-[#C0964B]">teto financeiro</span> gratuita
+      <p className="font-spectral text-[24px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[36px]">
+        Faça sua análise de
+        <br />
+        <span className="text-[#C0964B]">teto financeiro</span>
+        <br />
+        gratuita
       </p>
     ),
     text: description,
@@ -44,9 +50,14 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral font-extrabold uppercase leading-[1.05] text-[#D3CAC0]">
-        Descubra como{" "}
-        <span className="text-[#C0964B]">padrões emocionais</span> estão travando o seu crescimento financeiro.
+      <p className="font-spectral text-[21px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
+        Descubra como <span className="text-[#C0964B]">padrões</span>
+        <br />
+        <span className="text-[#C0964B]">invisíveis</span> estão travando
+        <br />
+        o seu crescimento
+        <br />
+        financeiro
       </p>
     ),
     text: description,
@@ -57,9 +68,17 @@ export const Headline: IHeadline[] = [
     isLogo: true,
     title: (
       <p className="font-spectral font-extrabold uppercase leading-[1.05] text-[#D3CAC0]">
-        Descubra quais{" "}
-        <span className="text-[#C0964B]">padrões invisíveis</span> travam seu crescimento financeiro e aprenda{" "}
-        <span className="whitespace-nowrap">a superá-los com</span> clareza e direção.
+        Descubra quais
+        <br />
+        <span className="text-[#C0964B]">padrões invisíveis</span>
+        <br />
+        travam seu crescimento
+        <br />
+        financeiro e aprenda
+        <br />
+        a superá-los com
+        <br />
+        clareza e direção.
       </p>
     ),
     text: description,

@@ -27,7 +27,7 @@ export default function HeroSection({ titleRedLine, redLine, formName, onSubmit,
       id="hero"
       className="flex h-[1021px] flex-col items-center justify-start overflow-hidden bg-[#071117] bg-[url('/images/tdo/v2/bg_mobile_primeira_dobra.png')] bg-cover bg-top px-4 pt-2 md:h-[900px] md:justify-center md:bg-[url('/images/tdo/v2/bg_desktop_primeira_dobra.png')] md:px-0"
     >
-      <div className="mt-[420px] flex w-full flex-col items-center justify-center pt-2 md:mt-0 md:w-[1080px] md:-translate-y-[70px] md:flex-row md:items-start md:justify-start md:pt-6">
+      <div className="mt-[350px] flex w-full flex-col items-center justify-center pt-2 md:mt-0 md:w-[1080px] md:-translate-y-[70px] md:flex-row md:items-start md:justify-start md:pt-6">
         <div className="w-full max-w-[348px] md:max-w-[520px]">
           <div className="pointer-events-none">
             <Image
@@ -64,7 +64,7 @@ export default function HeroSection({ titleRedLine, redLine, formName, onSubmit,
             </div>
           </div>
 
-          <div className="mt-6 text-left">
+          <div className="mt-6 w-[360px] text-left md:w-[650px]">
             <div className="font-spectral text-[24px] font-extrabold leading-none text-[#F4F0E1] md:text-[36px]">
               {titleRedLine}
             </div>

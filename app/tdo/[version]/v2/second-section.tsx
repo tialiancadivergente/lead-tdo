@@ -100,13 +100,13 @@ export default function SecondSection() {
               <br />
               Análise de Padrões
               <br />
-              Emocionais.
+              Invisíveis.
             </span>
 
             <span className="hidden md:block">
               É para isso que serve a Análise
               <br />
-              de Padrões Emocionais.
+              de Padrões Invisíveis.
             </span>
           </h3>
 
@@ -159,13 +159,13 @@ export default function SecondSection() {
               <p className="mt-5">
                 Lá você vai descobrir o caminho para
                 <br />
-                aumentar sua Permissão, superar bloqueios
+                aumentar sua Permissão, superar bloqueios,
                 <br />
-                emocionais, expandir seus resultados
+                expandir seus resultados financeiros e
                 <br />
-                financeiros e construir a vida que você sabe
+                construir a vida que você sabe que nasceu
                 <br />
-                que nasceu para viver.
+                para viver.
               </p>
             </div>
 
@@ -205,7 +205,7 @@ export default function SecondSection() {
               <p className="mt-5">
                 Lá você vai descobrir o caminho para aumentar sua Permissão,
                 <br />
-                superar bloqueios emocionais, expandir seus resultados financeiros
+                superar bloqueios, expandir seus resultados financeiros
                 <br />
                 e construir a vida que você sabe que nasceu para viver.
               </p>
