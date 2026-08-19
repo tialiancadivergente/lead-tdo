@@ -75,14 +75,24 @@ export const leadCaptureFormSchema = z
   .object({
     email: z.string().trim().email("Informe um e-mail valido."),
     ddi: z.string().min(1, "Selecione um DDI."),
-    whatsapp: z.string().trim(),
+    whatsapp: z.string().trim().min(1, "Informe um WhatsApp valido."),
   })
   .superRefine((data, ctx) => {
+    const whatsappDigits = data.whatsapp.replace(/\D/g, "");
+
     if (data.ddi !== BRAZIL_DDI) {
+      if (whatsappDigits.length < 6) {
+        ctx.addIssue({
+          code: z.ZodIssueCode.custom,
+          message: "Informe um WhatsApp valido.",
+          path: ["whatsapp"],
+        });
+      }
+
       return;
     }
 
-    if (data.whatsapp.length < 15) {
+    if (whatsappDigits.length < 11) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
         message: "Informe um WhatsApp valido.",

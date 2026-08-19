@@ -80,9 +80,11 @@ export function LeadCaptureForm({
     handleSubmit,
     watch,
     setValue,
-    formState: { errors, isSubmitting },
+    formState: { errors, isSubmitting, isValid },
   } = useForm<LeadCaptureFormValues>({
     resolver: zodResolver(leadCaptureFormSchema),
+    mode: "onChange",
+    reValidateMode: "onChange",
     defaultValues: {
       email: "",
       ddi: "+55",
@@ -164,7 +166,7 @@ export function LeadCaptureForm({
       <button
         type="submit"
         className={buttonClassName}
-        disabled={isSubmitting}
+        disabled={isSubmitting || !isValid}
       >
         <span>
           {isSubmitting ? submittingLabel : submitLabel}
