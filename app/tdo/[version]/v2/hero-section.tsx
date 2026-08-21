@@ -5,7 +5,10 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { CalendarDays, Smartphone } from "lucide-react";
 import { getEventConfigFromSlug } from "@/lib/config/event-config";
-import { LeadCaptureForm, type LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
+import {
+  LeadCaptureForm,
+  type LeadCaptureSubmitData,
+} from "@/app/components/form/lead-capture-form";
 
 interface ContainerProps {
   titleRedLine: ReactNode | null;
@@ -17,17 +20,24 @@ interface ContainerProps {
 
 const marqueeItems = Array.from({ length: 8 });
 
-export default function HeroSection({ titleRedLine, redLine, formName, onSubmit, submitError }: ContainerProps) {
+export default function HeroSection({
+  titleRedLine,
+  redLine,
+  formName,
+  onSubmit,
+  submitError,
+}: ContainerProps) {
   const params = useParams();
   const event = getEventConfigFromSlug(params.slug);
-  const eventDate = event.region === "Brasil" ? "24, 25 e 26/08" : "24, 25 e 26/08";
+  const eventDate =
+    event.region === "Brasil" ? "24, 25 e 26/08" : "24, 25 e 26/08";
 
   return (
     <section
       id="hero"
       className="flex h-[1021px] flex-col items-center justify-start overflow-hidden bg-[#071117] bg-[url('/images/tdo/v2/bg_mobile_primeira_dobra.png')] bg-cover bg-top px-4 pt-2 md:h-[900px] md:justify-center md:bg-[url('/images/tdo/v2/bg_desktop_primeira_dobra.png')] md:px-0"
     >
-      <div className="mt-[350px] flex w-full flex-col items-center justify-center pt-2 md:mt-0 md:w-[1080px] md:-translate-y-[70px] md:flex-row md:items-start md:justify-start md:pt-6">
+      <div className="mt-[350px] flex w-full -translate-y-[300px] flex-col items-center justify-center pt-2 md:mt-0 md:w-[1080px] md:-translate-y-[110px] md:flex-row md:items-start md:justify-start md:pt-6">
         <div className="w-full max-w-[348px] md:max-w-[520px]">
           <div className="pointer-events-none">
             <Image
@@ -36,18 +46,26 @@ export default function HeroSection({ titleRedLine, redLine, formName, onSubmit,
               width={274}
               height={84}
               priority
-              className="h-auto w-[274px] select-none object-contain"
+              className="h-auto w-[205px] select-none object-contain md:w-[274px]"
             />
           </div>
 
           <div className="mt-3 flex h-[18px] w-full items-center gap-4 whitespace-nowrap font-raleway text-[14px] font-medium leading-[135%] text-[#F4F0E1] md:hidden">
             <div className="flex items-center gap-2">
-              <CalendarDays className="shrink-0 text-[#C0964B]" size={14} />
-              <span>{eventDate} | ÀS {event.time}</span>
+              <CalendarDays
+                className="shrink-0 text-[#C0964B]"
+                size={14}
+              />
+              <span>
+                {eventDate} | ÀS {event.time}
+              </span>
             </div>
 
             <div className="flex items-center gap-2">
-              <Smartphone className="shrink-0 text-[#C0964B]" size={14} />
+              <Smartphone
+                className="shrink-0 text-[#C0964B]"
+                size={14}
+              />
               <span>Online e Gratuito</span>
             </div>
           </div>
@@ -55,7 +73,9 @@ export default function HeroSection({ titleRedLine, redLine, formName, onSubmit,
           <div className="mt-3 hidden items-center gap-5 text-[#F4F0E1] md:flex">
             <div className="flex items-center gap-2 text-[14px] font-medium">
               <CalendarDays className="text-[#C0964B]" size={16} />
-              <span>{eventDate} | ÀS {event.time}</span>
+              <span>
+                {eventDate} | ÀS {event.time}
+              </span>
             </div>
 
             <div className="flex items-center gap-2 text-[14px] font-medium">
@@ -64,16 +84,21 @@ export default function HeroSection({ titleRedLine, redLine, formName, onSubmit,
             </div>
           </div>
 
-          <div className="mt-6 w-[360px] text-left md:w-[650px]">
-            <div className="font-spectral text-[24px] font-extrabold leading-none text-[#F4F0E1] md:text-[36px]">
+          <div className="mt-5 w-[360px] text-left md:mt-6 md:w-[650px]">
+            <div className="font-spectral font-extrabold leading-none text-[#F4F0E1]">
               {titleRedLine}
             </div>
           </div>
 
-          <div className="mb-8 mt-4 w-full font-spectral text-[16px] leading-[135%] text-[#D3CAC0] md:max-w-[460px] md:text-[20px]">
+          <div className="mb-6 mt-3 w-full font-spectral text-[16px] leading-[135%] text-[#D3CAC0] md:mb-8 md:mt-4 md:max-w-[460px] md:text-[20px]">
             {redLine || (
               <>
-                Descubra como <span className="font-bold text-[#C0964B]">aumentar o seu nível de permissão</span> e melhorar seus resultados nas finanças, nos relacionamentos e na saúde.
+                Descubra como{" "}
+                <span className="font-bold text-[#C0964B]">
+                  aumentar o seu nível de permissão
+                </span>{" "}
+                e melhorar seus resultados nas finanças, nos relacionamentos e
+                na saúde.
               </>
             )}
           </div>

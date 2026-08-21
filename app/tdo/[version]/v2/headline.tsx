@@ -10,7 +10,9 @@ interface IHeadline {
 
 const description = (
   <p className="w-full font-spectral text-[16px] leading-[135%] text-[#D3CAC0] md:text-[20px]">
-    Participe gratuitamente do evento e entenda os fatores que geram bloqueios no momento em que sua vida profissional e pessoal precisa avançar. Cadastre-se abaixo para fazer sua inscrição.
+    Participe gratuitamente do evento e entenda os fatores que geram bloqueios
+    no momento em que sua vida profissional e pessoal precisa avançar.
+    Cadastre-se abaixo para fazer sua inscrição.
   </p>
 );
 
@@ -20,7 +22,7 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral text-[21px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
+      <p className="font-spectral text-[27px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
         Faça sua análise de
         <br />
         <span className="text-[#C0964B]">padrões invisíveis</span>
@@ -35,7 +37,7 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral text-[24px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[36px]">
+      <p className="font-spectral text-[28px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[36px]">
         Faça sua análise de
         <br />
         <span className="text-[#C0964B]">teto financeiro</span>
@@ -50,7 +52,7 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral text-[21px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
+      <p className="font-spectral text-[26px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
         Descubra como <span className="text-[#C0964B]">padrões</span>
         <br />
         <span className="text-[#C0964B]">invisíveis</span> estão travando
@@ -67,7 +69,7 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral font-extrabold uppercase leading-[1.05] text-[#D3CAC0]">
+      <p className="font-spectral text-[25px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[36px]">
         Descubra quais
         <br />
         <span className="text-[#C0964B]">padrões invisíveis</span>
@@ -88,7 +90,7 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral text-[22px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[34px]">
+      <p className="font-spectral text-[27px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[34px]">
         Descubra como
         <br />
         <span className="text-[#C0964B]">potencializar seus</span>
@@ -98,7 +100,8 @@ export const Headline: IHeadline[] = [
     ),
     text: (
       <p className="w-full font-spectral text-[16px] leading-[135%] text-[#D3CAC0] md:text-[20px]">
-        Analise seus padrões comportamentais e identifique o que pode estar travando o seu crescimento financeiro.
+        Analise seus padrões comportamentais e identifique o que pode estar
+        travando o seu crescimento financeiro.
       </p>
     ),
   },
@@ -107,7 +110,7 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral text-[20px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
+      <p className="font-spectral text-[25px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
         Identifique os padrões
         <br />
         que impactam seu
@@ -119,7 +122,8 @@ export const Headline: IHeadline[] = [
     ),
     text: (
       <p className="w-full font-spectral text-[16px] leading-[135%] text-[#D3CAC0] md:text-[20px]">
-        Participe gratuitamente do Triunfo dos Otimistas e descubra como ir mais longe financeiramente.
+        Participe gratuitamente do Triunfo dos Otimistas e descubra como ir
+        mais longe financeiramente.
       </p>
     ),
   },
@@ -128,7 +132,7 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral text-[20px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
+      <p className="font-spectral text-[25px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
         Você tem capacidade
         <br />
         e trabalha muito,
@@ -140,7 +144,8 @@ export const Headline: IHeadline[] = [
     ),
     text: (
       <p className="w-full font-spectral text-[16px] leading-[135%] text-[#D3CAC0] md:text-[20px]">
-        Conheça a Teoria da Permissão por completo e identifique os padrões que podem estar te travando financeiramente.
+        Conheça a Teoria da Permissão por completo e identifique os padrões que
+        podem estar te travando financeiramente.
       </p>
     ),
   },
@@ -149,7 +154,7 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral text-[20px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
+      <p className="font-spectral text-[26px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[32px]">
         Quando sobra dinheiro,
         <br />
         <span className="text-[#C0964B]">acontece alguma coisa?</span>
@@ -159,7 +164,8 @@ export const Headline: IHeadline[] = [
     ),
     text: (
       <p className="w-full font-spectral text-[16px] leading-[135%] text-[#D3CAC0] md:text-[20px]">
-        Participe gratuitamente de três aulas ao vivo para fazer sua Análise de Padrões e descobrir como destravar sua vida financeira.
+        Participe gratuitamente de três aulas ao vivo para fazer sua Análise de
+        Padrões e descobrir como destravar sua vida financeira.
       </p>
     ),
   },
@@ -168,19 +174,19 @@ export const Headline: IHeadline[] = [
     isPicture: false,
     isLogo: true,
     title: (
-      <p className="font-spectral text-[19px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[30px]">
+      <p className="font-spectral text-[24px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[30px]">
         Descubra a utilidade
         <br />
         do seu problema financeiro
-        <br />
-        e <span className="text-[#C0964B]">supere os padrões</span>
+        <br />e <span className="text-[#C0964B]">supere os padrões</span>
         <br />
         <span className="text-[#C0964B]">que te prendem nesse lugar.</span>
       </p>
     ),
     text: (
       <p className="w-full font-spectral text-[16px] leading-[135%] text-[#D3CAC0] md:text-[20px]">
-        3 aulas práticas, gratuitas e ao vivo para você identificar padrões relacionais e comportamentais ligados às suas finanças.
+        3 aulas práticas, gratuitas e ao vivo para você identificar padrões
+        relacionais e comportamentais ligados às suas finanças.
       </p>
     ),
   },
