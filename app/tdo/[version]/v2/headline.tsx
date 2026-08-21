@@ -190,4 +190,19 @@ export const Headline: IHeadline[] = [
       </p>
     ),
   },
+  {
+    id: "h10",
+    isPicture: false,
+    isLogo: true,
+    title: (
+      <p className="font-spectral text-[28px] font-extrabold uppercase leading-[1.05] text-[#D3CAC0] md:text-[36px]">
+        Faça seu diagnóstico de
+        <br />
+        <span className="text-[#C0964B]">teto financeiro</span>
+        <br />
+        gratuito
+      </p>
+    ),
+    text: description,
+  },
 ];
